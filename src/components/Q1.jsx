@@ -5,7 +5,7 @@ const Q1 = () => {
     const [leftList, setLeftList] = useState([])
     const [rightSelect, setRightSelect] = useState([])
     const [leftSelect, setLeftSelect] = useState([])
-
+    // It works
     const checked = (e, item, isFrom) => {
         if (isFrom === 'left' && e.target.checked) {
             setRightSelect([])
