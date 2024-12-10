@@ -1,18 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Q1 from './components/Q1'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import routes from "./router/router";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const router = createBrowserRouter(routes);
 
-  return (
-    <>
-      <h1>React Coding Questions</h1>
-      <Q1/>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
